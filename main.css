@@ -1,0 +1,69 @@
+/* Get rid of default margin and padding*/
+*{
+	margin:0px;
+	padding:0px;
+	list-style-type:none;
+}
+header,nav,section,footer,article.aside
+{
+	display:block;
+}
+
+/* Centering here*/
+.container
+{
+	width:1000px;
+	margin:0px auto;
+	
+}
+.clear{
+	clear:both;
+}
+.logo
+{
+	width:232px;
+	height:100px;
+	float:left
+}
+.top_nav
+{
+	width:768px;
+	float:left;
+	
+}
+.top_nav ul li
+{
+	/*display:inline-block;we can use float:left instead but it will leave any space between 2 li tags. To give a space we can use padding*/
+	
+	float:left;
+	padding:45px 20px;
+}
+.left_side
+{
+	float:left;
+	width:700px;
+}
+.left_side article
+{
+	border:2px solid red;
+	margin-right:10px;
+	padding:10px;
+}
+.right_side
+{
+float:left;	
+width:300px;
+}
+
+.right_side div
+{
+	border:2px solid blue;
+	padding:10px;
+	margin:0px 0px 10px 0px;
+}
+
+.page_footer
+{
+	clear:both;
+	text-align:center;
+}

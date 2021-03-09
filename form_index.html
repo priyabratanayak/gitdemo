@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"></meta>
+<title>Tutorial 44- Forms and Form element</title>
+<link rel="stylesheet" href="form-main.css"/>
+</head>
+<body>
+<!--we need to attributes in form. 1 action: this tells where do you want to send the data. 2 method: it tells us how do you send the data. post is more secured than get method
+get will add the data at the end of the url
+-->
+<form action="" method="get">
+<!-- name attributes tells us what info came from the element.name should be unique. Value determine what default valu it should have. size tells us the how big or charecters long  the input element appears-->
+Username:<input type="text" name="username" maxlength="10" value="name" size="104"/>
+Password:<input type="password" name="username" maxlength="10" value="password" size="100"/>
+Pick a Food
+<select name="food" multiple="multiple" size="3">
+<optgroup label="salty food">
+<option value="potato_chips">Potato Chips</option>
+<option value="popcorn">Popcorn</option>
+</optgroup>
+<optgroup label="hot foods">
+<option value="nachos" selected="selected">Nachos</option>
+<option value="Pizza">Pizzas</option>
+</optgroup>
+</select>
+<br/>
+what do you do in your break time
+<hr/>
+https://www.youtube.com/watch?v=pCa3-RdFWas
+<br/>
+play sport <input type="checkbox" name="spare_time[]" value="sport" checked="checked"/>
+play computer Game <input type="checkbox" name="spare_time[]" value="sport" />
+Shopping <input type="checkbox" name="shopping" value="sport" />
+<hr/>
+<br/>
+Do you play league of legends?
+<br/>
+Yes:<input type="radio" name="plays_lol" value="yes" checked="checked"/>
+No:<input type="radio" name="plays_lol" value="no"/>
+<hr/>
+Tell me a story<br/>
+<!-- rows and cols are the measurement of charecters-->
+<textarea name="story" rows="15" cols="60"></textarea>
+<hr/>
+<br/>
+Buttons<hr/>
+<fieldset>
+<legend>It says what data need to go in fieldset</legend>
+<label for="It links our label to the element it was ment for. Here it is name textfield. we need to mention the id of that element. here it is firstname">name:</label><input type="text" name="name" id="firstname"><br/>
+<label for="pw">password:</label><input type="password" name="password" id="pw"><br/>
+</fieldset>
+checkboxes:<br/>
+<!--  If we add lablel to a checkbox then by clicking on the label it will select  the checkbox-->
+1<input type="checkbox" name="checker" value="1">
+2<input type="checkbox" name="checker" value="2">
+3<input type="checkbox" name="checker" value="3"><br/>
+	<input type="button" value="I am a button"/><br/>
+	<input type="file" size="50"/><br/>
+	<input type="submit" value="submit"><br/>
+	<input type="reset" value="reset"><br/>
+	
+</form>
+</body>
+</html>
